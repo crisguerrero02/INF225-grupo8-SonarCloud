@@ -7,7 +7,6 @@ const BorrarHora = ({ id }) =>{
     }
 
     return(
-        <>
             <button 
                 type='button'
                 className='btn btn-secondary btn-sm'
@@ -15,7 +14,6 @@ const BorrarHora = ({ id }) =>{
             >
                 borrar
             </button>
-        </>
     );
 };
 
