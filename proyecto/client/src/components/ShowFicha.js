@@ -49,7 +49,7 @@ const ShowFicha = ({ rut }) => {
                             <p>Diagnósticos anteriores : {
                                 fichaData.diagnosticos_ant && fichaData.diagnosticos_ant.length > 0 ? (
                                     <ul>
-                                        {fichaData.diagnosticos_ant.map((item, index) => <li key={index}>{item}</li>)}
+                                        {fichaData.diagnosticos_ant.map(item => <li key={item.id}>{item}</li>)}
                                     </ul>
                                 ) : 'No presenta'
                             }
@@ -70,3 +70,4 @@ const ShowFicha = ({ rut }) => {
 };
 
 export default ShowFicha;
+
